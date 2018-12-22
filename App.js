@@ -21,6 +21,18 @@ const drawerRouteConfig = {
   },
 };
 
+const CustomDrawerContentComponent = props => (
+  <DrawerContainer>
+    <DrawerItems {...props} />
+  </DrawerContainer>
+);
+
+const drawerNavigatorConfig = {
+  contentComponent: props => <CustomDrawerContentComponent {...props} />,
+};
+
+const AppDrawer = DrawerNavigator(drawerRouteConfig, drawerNavigatorConfig);
+
 export default class App extends React.Component {
   render() {
     return (
