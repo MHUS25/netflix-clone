@@ -26,4 +26,29 @@ const LogoContainer = styled.Image`
   height: 50;
 `;
 
+class Header extends Component {
+  static propTypes = {
+    openDrawer: PropTypes.func.isRequired,
+  };
+
+  render() {
+    const { openDrawer } = this.props;
+    return (
+      <Container>
+        <TouchableWithoutFeedback onPress={openDrawer}>
+          <IconContainer>
+            <Icon name={'bars'} size={30} color={COLORS.GREY.BRIGHT_GREY} />
+          </IconContainer>
+        </TouchableWithoutFeedback>
+        <LogoContainer source={NETFLIX_LOGO} />
+        <TouchableWithoutFeedback onPress={() => {}}>
+          <IconContainer>
+            <Icon name={'search'} size={30} color={COLORS.GREY.BRIGHT_GREY} />
+          </IconContainer>
+        </TouchableWithoutFeedback>
+      </Container>
+    );
+  }
+}
+
 export default Header;
