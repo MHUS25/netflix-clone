@@ -15,6 +15,12 @@ const AppContainer = styled.View`
   background-color: ${COLORS.GREY.BLACK_RUSSIAN};
 `;
 
+const drawerRouteConfig = {
+  Home: {
+    screen: HomeStackNavigator,
+  },
+};
+
 export default class App extends React.Component {
   render() {
     return (
