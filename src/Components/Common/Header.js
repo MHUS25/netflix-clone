@@ -16,4 +16,14 @@ const Container = styled.View`
   justify-content: space-between;
 `;
 
+const IconContainer = styled.View`
+  padding-left: 10;
+  padding-right: 10;
+`;
+
+const LogoContainer = styled.Image`
+  width: 175;
+  height: 50;
+`;
+
 export default Header;
