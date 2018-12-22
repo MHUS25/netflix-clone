@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { TouchableOpacity } from 'react-native';
 import styled from 'styled-components/native';
-import { COLORS } from 'constants/styles';
+import { COLORS } from '../../Constants/styles';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
 const Container = styled.View`

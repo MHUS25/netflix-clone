@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components/native';
-import Header from 'components/common/header';
-import { COLORS } from 'constants/styles';
+import Header from '../Common/header';
+import { COLORS } from '../../Constants/styles';
 import { TouchableWithoutFeedback, ScrollView, TouchableOpacity } from 'react-native';
 import ShowData from 'data/data';
 import Icon from 'react-native-vector-icons/FontAwesome';
