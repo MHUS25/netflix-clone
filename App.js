@@ -36,18 +36,10 @@ const AppDrawer = DrawerNavigator(drawerRouteConfig, drawerNavigatorConfig);
 export default class App extends React.Component {
   render() {
     return (
-      <View style={styles.container}>
-        <Text>Hello Muna!</Text>
-      </View>
+      <AppContainer>
+        <StatusBar hidden={true} />
+        <AppDrawer />
+      </AppContainer>
     );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
