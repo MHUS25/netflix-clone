@@ -3,7 +3,7 @@ import styled from 'styled-components/native';
 import Header from '../Common/header';
 import { COLORS } from '../../Constants/styles';
 import { TouchableWithoutFeedback, ScrollView, TouchableOpacity } from 'react-native';
-import ShowData from 'data/data';
+import ShowData from '../../Data/data';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
 const Container = styled.View`

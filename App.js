@@ -1,8 +1,8 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { DrawerNavigator, DrawerItems } from 'react-navigation';
-import HomeStackNavigator from '../src/Components/Navigation/home-stack-navigator';
-import { COLORS } from 'constants/styles';
+import HomeStackNavigator from './src/Components/Navigation/home-stack-navigator';
+import { COLORS } from './src/Constants/styles';
 import styled from 'styled-components/native';
 
 const DrawerContainer = styled.View`
